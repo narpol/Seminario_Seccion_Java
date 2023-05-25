@@ -5,15 +5,17 @@ import com.example.demo.domain.model.gateways.ClientRepository;
 import com.example.demo.domain.usecase.BookUseCase;
 import com.example.demo.domain.usecase.ClientUseCase;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
+@Configuration
 public class UseCaseBeanConfig {
     @Bean
     public BookUseCase bookUseCase(BookRepository bookRepository){
         return new BookUseCase(bookRepository);
     }
 
-    @Bean
+    /*@Bean
     public ClientUseCase clientUseCase (ClientRepository clientRepository){
         return clientUseCase(clientRepository);
-    }
+    }*/
 }

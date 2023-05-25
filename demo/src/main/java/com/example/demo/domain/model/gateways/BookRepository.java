@@ -5,6 +5,5 @@ import com.example.demo.domain.model.Book;
 public interface BookRepository {
 
     Book saveBook(Book book);
-    Book getBookIsbn(String isbn);
-
+    Book getBookByIsbn(String isbn);
 }

@@ -2,6 +2,8 @@ package com.example.demo.domain.usecase;
 
 import com.example.demo.domain.model.Client;
 import com.example.demo.domain.model.gateways.ClientRepository;
+import lombok.AllArgsConstructor;
+
 
 public class ClientUseCase {
 
